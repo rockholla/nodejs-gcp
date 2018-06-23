@@ -1,0 +1,46 @@
+{
+  "name": "gcpe",
+  "version": "0.1.0",
+  "description": "An extension of Google Cloud SDK components",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rockholla/node-gcpe.git"
+  },
+  "author": "Patrick Force <patrickforce@gmail.com>",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/rockholla/node-gcpe/issues"
+  },
+  "homepage": "https://github.com/rockholla/node-gcpe#readme",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "prebuild": "npm run lint",
+    "postbuild": "npm run test",
+    "build": "babel src --out-dir lib",
+    "build-untested": "babel src --out-dir lib",
+    "test": "jest -c jest.config.js",
+    "lint": "eslint src/ tests/",
+    "postinstall": "node bin/postinstall.js"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@google-cloud/compute": "^0.10.0",
+    "@google-cloud/storage": "^1.7.0",
+    "@google-cloud/container": "^0.2.0"
+  },
+  "devDependencies": {
+    "@google-cloud/compute": "^0.10.0",
+    "@google-cloud/storage": "^1.7.0",
+    "@google-cloud/container": "^0.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "jest": "^23.1.0",
+    "webpack": "^4.12.0"
+  }
+}
