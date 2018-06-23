@@ -1,13 +1,35 @@
+import AppEngine from './app-engine'
 import Compute from './compute'
 import Container from './container'
 import Storage from './storage'
 
-class Gcp {
+class Gcpe {
+
+  constructor (keyFilePath) {
+    this.keyFilePath = keyFilePath
+  }
+
+  appEngine () {
+    return new AppEngine(this.keyFilePath)
+  }
+
+  compute () {
+    return new Compute(this.keyFilePath)
+  }
+
+  container () {
+    return new Container(this.keyFilePath)
+  }
+
+  storage () {
+    return new Storage(this.keyFilePath)
+  }
 
 }
 
 export {
-  Gcp,
+  Gcpe,
+  AppEngine,
   Compute,
   Container,
   Storage,
