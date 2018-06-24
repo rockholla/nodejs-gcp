@@ -28,7 +28,7 @@ class Gcpe {
 }
 
 export {
-  Gcpe,
+  Gcpe as default,
   AppEngine,
   Compute,
   Container,

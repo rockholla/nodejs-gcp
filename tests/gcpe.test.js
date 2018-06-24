@@ -1,5 +1,5 @@
 import path from 'path'
-import { Gcpe, AppEngine, Compute, Container, Storage } from '../lib'
+import Gcpe, {AppEngine, Compute, Container, Storage } from '../lib'
 
 describe('gcpe', () => {
 
