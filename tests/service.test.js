@@ -1,7 +1,7 @@
 import path from 'path'
 import Service from '../lib/service'
 
-describe('gcpe/service', () => {
+describe('service', () => {
 
   it('constructor should not work without a key file path', () => {
     expect(() => {

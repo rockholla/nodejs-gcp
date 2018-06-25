@@ -3,7 +3,7 @@ import Compute from './compute'
 import Container from './container'
 import Storage from './storage'
 
-class Gcpe {
+class Gcp {
 
   constructor (keyFilePath) {
     this.keyFilePath = keyFilePath
@@ -28,7 +28,7 @@ class Gcpe {
 }
 
 export {
-  Gcpe as default,
+  Gcp as default,
   AppEngine,
   Compute,
   Container,
