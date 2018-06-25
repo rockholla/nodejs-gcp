@@ -17,7 +17,8 @@
   "homepage": "https://github.com/rockholla/nodejs-gcp#readme",
   "main": "lib/index.js",
   "engines": {
-    "node": ">=8"
+    "node": ">=8",
+    "npm": ">=6"
   },
   "scripts": {
     "prebuild": "npm run lint",
