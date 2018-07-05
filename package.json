@@ -37,8 +37,9 @@
   },
   "devDependencies": {
     "@google-cloud/compute": "^0.10.0",
-    "@google-cloud/storage": "^1.7.0",
     "@google-cloud/container": "^0.2.0",
+    "@google-cloud/storage": "^1.7.0",
+    "@rockholla/git-npm-release": "^0.6.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
