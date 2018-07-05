@@ -1,5 +1,5 @@
 import path from 'path'
-import Gcp, {App, Compute, Kubernetes, Storage } from '../lib'
+import Gcp, { App, Compute, Kubernetes, Storage } from '../lib'
 
 describe('gcp', () => {
 
