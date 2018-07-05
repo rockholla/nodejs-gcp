@@ -1,6 +1,6 @@
 import Service from '../service'
 
-class AppEngine extends Service {
+class App extends Service {
 
   constructor(keyFilePath) {
     super(keyFilePath, '@google-cloud/app-engine')
@@ -8,4 +8,4 @@ class AppEngine extends Service {
 
 }
 
-export default AppEngine
+export default App

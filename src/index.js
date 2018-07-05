@@ -1,6 +1,6 @@
-import AppEngine from './app-engine'
+import App from './app'
 import Compute from './compute'
-import Container from './container'
+import Kubernetes from './kubernetes'
 import Storage from './storage'
 
 class Gcp {
@@ -9,16 +9,16 @@ class Gcp {
     this.keyFilePath = keyFilePath
   }
 
-  appEngine () {
-    return new AppEngine(this.keyFilePath)
+  app () {
+    return new App(this.keyFilePath)
   }
 
   compute () {
     return new Compute(this.keyFilePath)
   }
 
-  container () {
-    return new Container(this.keyFilePath)
+  kubernetes () {
+    return new Kubernetes(this.keyFilePath)
   }
 
   storage () {
@@ -29,8 +29,8 @@ class Gcp {
 
 export {
   Gcp as default,
-  AppEngine,
+  App,
   Compute,
-  Container,
+  Kubernetes,
   Storage,
 }
