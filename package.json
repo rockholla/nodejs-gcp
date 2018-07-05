@@ -1,6 +1,6 @@
 {
   "name": "@rockholla/gcp",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "An extension of Google Cloud SDK components, functionality and helpers not available through the SDK itself",
   "repository": {
     "type": "git",
@@ -24,10 +24,11 @@
     "prebuild": "npm run lint",
     "postbuild": "npm run test",
     "build": "babel src --out-dir lib",
-    "build-untested": "babel src --out-dir lib",
+    "build-only": "babel src --out-dir lib",
     "test": "jest -c jest.config.js",
     "lint": "eslint src/ tests/",
-    "postinstall": "node bin/postinstall.js"
+    "postinstall": "node bin/postinstall.js",
+    "release": "npm run build && git-npm-release"
   },
   "dependencies": {},
   "peerDependencies": {
