@@ -1,6 +1,6 @@
-import Service from '../service'
+import Library from '../library'
 
-class App extends Service {
+class App extends Library {
 
   constructor (gcp) {
     super('@google-cloud/app-engine', gcp)

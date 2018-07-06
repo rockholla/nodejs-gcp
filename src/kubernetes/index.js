@@ -1,6 +1,6 @@
-import Service from '../service'
+import Library from '../library'
 
-class Kubernetes extends Service {
+class Kubernetes extends Library {
 
   constructor (gcp) {
     super('@google-cloud/container', gcp)

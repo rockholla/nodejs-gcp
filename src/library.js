@@ -2,7 +2,7 @@ import fs from 'fs'
 import sleep from 'sleep'
 import { DEFAULT_WAIT_TIMEOUT } from './constants'
 
-class Service {
+class Library {
 
   constructor (sdkPackage, gcp) {
     if (!gcp || !gcp.keyFilePath) {
@@ -63,4 +63,4 @@ class Service {
 
 }
 
-export default Service
+export default Library

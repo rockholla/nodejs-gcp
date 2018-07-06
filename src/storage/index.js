@@ -1,6 +1,6 @@
-import Service from '../service'
+import Library from '../library'
 
-class Storage extends Service {
+class Storage extends Library {
 
   constructor (gcp) {
     super('@google-cloud/storage', gcp)
