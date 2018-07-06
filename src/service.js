@@ -24,9 +24,9 @@ class Service {
     this.logger       = gcp.logger
     this.waitTimeout  = gcp.waitTimeout || DEFAULT_WAIT_TIMEOUT
     try {
-      this.service = require(sdkPackage)
+      this.Service = require(sdkPackage)
     } catch (error) {
-      this.service = null
+      this.Service = null
     }
   }
 

@@ -22,21 +22,21 @@ describe('service', () => {
   })
 
   it('constructor should work with a valid key file path and package, service property w/in should be populated', () => {
-    const service = new Service('@google-cloud/storage', { keyFilePath: path.resolve(__dirname, '.assets', 'dummy-key.json') })
-    expect(service).toBeInstanceOf(Service)
-    expect(typeof service.service).toBe('function')
+    const s = new Service('@google-cloud/storage', { keyFilePath: path.resolve(__dirname, '.assets', 'dummy-key.json') })
+    expect(s).toBeInstanceOf(Service)
+    expect(typeof s.Service).toBe('function')
   })
 
   it('constructor should still work with a blank/null package name, but service w/in should be null', () => {
-    const service = new Service(null, { keyFilePath: path.resolve(__dirname, '.assets', 'dummy-key.json') })
-    expect(service).toBeInstanceOf(Service)
-    expect(service.service).toBe(null)
+    const s = new Service(null, { keyFilePath: path.resolve(__dirname, '.assets', 'dummy-key.json') })
+    expect(s).toBeInstanceOf(Service)
+    expect(s.Service).toBe(null)
   })
 
   it('constructor should still work with an invalid package name, but service w/in should be null', () => {
-    const service = new Service('@google-cloud/no-such-service', { keyFilePath: path.resolve(__dirname, '.assets', 'dummy-key.json') })
-    expect(service).toBeInstanceOf(Service)
-    expect(service.service).toBe(null)
+    const s = new Service('@google-cloud/no-such-service', { keyFilePath: path.resolve(__dirname, '.assets', 'dummy-key.json') })
+    expect(s).toBeInstanceOf(Service)
+    expect(s.Service).toBe(null)
   })
 
 })

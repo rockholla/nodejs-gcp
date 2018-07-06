@@ -4,7 +4,7 @@ class Kubernetes extends Service {
 
   constructor (gcp) {
     super('@google-cloud/container', gcp)
-    this.clusterManager = new this.service.v1.ClusterManagerClient({
+    this.clusterManager = new this.Service.v1.ClusterManagerClient({
       projectId: this.projectId,
       keyFilename: this.keyFilePath,
     })
