@@ -2,8 +2,8 @@ import Service from '../service'
 
 class Compute extends Service {
 
-  constructor(keyFilePath) {
-    super(keyFilePath, '@google-cloud/compute')
+  constructor (gcp) {
+    super('@google-cloud/compute', gcp)
   }
 
 }

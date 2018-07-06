@@ -2,8 +2,8 @@ import Service from '../service'
 
 class App extends Service {
 
-  constructor(keyFilePath) {
-    super(keyFilePath, '@google-cloud/app-engine')
+  constructor (gcp) {
+    super('@google-cloud/app-engine', gcp)
   }
 
 }

@@ -30,7 +30,9 @@
     "postinstall": "node bin/postinstall.js",
     "release": "npm run build && git-npm-release"
   },
-  "dependencies": {},
+  "dependencies": {
+    "sleep": "^5.1.1"
+  },
   "peerDependencies": {
     "@google-cloud/compute": "^0.10.0",
     "@google-cloud/storage": "^1.7.0",
@@ -47,6 +49,7 @@
     "babel-preset-env": "^1.7.0",
     "eslint": "^4.19.1",
     "jest": "^23.1.0",
-    "webpack": "^4.12.0"
+    "webpack": "^4.12.0",
+    "winston": "^3.0.0"
   }
 }

@@ -1,0 +1,1 @@
+export const DEFAULT_WAIT_TIMEOUT = 300
