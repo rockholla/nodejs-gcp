@@ -38,8 +38,4 @@ class Gcp {
 export {
   DEFAULT_WAIT_TIMEOUT,
   Gcp as default,
-  App,
-  Compute,
-  Kubernetes,
-  Storage,
 }

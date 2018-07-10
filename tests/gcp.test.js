@@ -1,5 +1,9 @@
 import path from 'path'
-import Gcp, { App, Compute, Kubernetes, Storage } from '../lib'
+import Gcp from '../lib'
+import App from '../lib/app'
+import Compute from '../lib/compute'
+import Kubernetes from '../lib/kubernetes'
+import Storage from '../lib/storage'
 
 describe('gcp', () => {
 
@@ -10,35 +14,19 @@ describe('gcp', () => {
     expect(gcp).toBeInstanceOf(Gcp)
   })
 
-  it('imported App constructor should work', () => {
-    expect(new App({ keyFilePath: path.resolve(__dirname, '.assets', 'dummy-key.json') })).toBeInstanceOf(App)
-  })
-
-  it('Gcp encapsulated app should be of type App', () => {
+  it('Gcp-encapsulated app() should be of type App', () => {
     expect(gcp.app()).toBeInstanceOf(App)
   })
 
-  it('imported Compute constructor should work', () => {
-    expect(new Compute({ keyFilePath: path.resolve(__dirname, '.assets', 'dummy-key.json') })).toBeInstanceOf(Compute)
-  })
-
-  it('Gcp encapsulated compute should be of type Compute', () => {
+  it('Gcp-encapsulated compute() should be of type Compute', () => {
     expect(gcp.compute()).toBeInstanceOf(Compute)
   })
 
-  it('imported Kubernetes constructor should work', () => {
-    expect(new Kubernetes({ keyFilePath: path.resolve(__dirname, '.assets', 'dummy-key.json') })).toBeInstanceOf(Kubernetes)
-  })
-
-  it('Gcp encapsulated kubernetes should be of type Kubernetes', () => {
+  it('Gcp-encapsulated kubernetes() should be of type Kubernetes', () => {
     expect(gcp.kubernetes()).toBeInstanceOf(Kubernetes)
   })
 
-  it('imported Storage constructor should work', () => {
-    expect(new Storage({ keyFilePath: path.resolve(__dirname, '.assets', 'dummy-key.json') })).toBeInstanceOf(Storage)
-  })
-
-  it('Gcp encapsulated storage should be of type Storage', () => {
+  it('Gcp-encapsulated storage() should be of type Storage', () => {
     expect(gcp.storage()).toBeInstanceOf(Storage)
   })
 
